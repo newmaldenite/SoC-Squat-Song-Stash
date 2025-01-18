@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose a Song - Workout Songs</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/" class="nav-link">Add a Song!</a></li>
+        <li><a href="/search.html" class="nav-link active">Choose a Song!</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Choose a song!</h1>
+      
+      <div class="search-controls">
+        <div class="form-group">
+          <label for="bootcampFilter">Filter by Bootcamp:</label>
+          <select id="bootcampFilter">
+            <option value="all">All Bootcamps</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="searchType">Search by:</label>
+          <select id="searchType">
+            <option value="song_title">Song Title</option>
+            <option value="user_name">User Name</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="searchInput">Search:</label>
+          <input type="text" id="searchInput" placeholder="Enter search term...">
+        </div>
+
+        <button id="randomSong" class="random-btn">Random Song!</button>
+      </div>
+
+      <div id="searchResults" class="search-results"></div>
+    </main>
+
+    <script type="module" src="/js/search.js"></script>
+  </body>
+</html>
